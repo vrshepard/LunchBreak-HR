@@ -1,0 +1,256 @@
+/* the styles for the elements */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,500&family=Roboto&display=swap');
+
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 80%;
+    padding: 20px;
+    background-color: white;
+}
+
+/* the styles for the slicknav menu crap*/
+#mobile_menu {
+    display: none;
+}
+
+#nav_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-device-width: 796px),
+screen and (max-width:796px) {
+    #nav_menu {
+        display: none;
+    }
+
+    #mobile_menu {
+        display: block;
+    }
+}
+
+
+/* the styles for the header */
+header img {
+    max-width: 250px;
+    display: block;
+    margin: auto;
+}
+
+
+
+header #nav_menu ul {
+    list-style-type: none;
+    padding: 0em 0;
+    text-align: center;
+    border-top: 2px solid #10FFCD;
+    border-bottom: 2px solid #10FFCD;
+}
+
+header #nav_menu ul li {
+    float: left;
+    display: inline;
+    padding: 0 1.5em;
+}
+
+header #nav_menu ul li a {
+    font-family: 'Roboto';
+    font-size: medium;
+    text-align: center;
+    display: block;
+    max-width: 150px;
+    padding: 0.5em 0;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+header #nav_menu ul li a.current {
+    color: #10FFCD;
+    border-bottom: 2px solid #10FFCD;
+}
+
+header #nav_menu ul li a:hover {
+    border-bottom: 2px solid #10FFCD;
+    padding: .5em 0;
+}
+
+
+
+
+/* the styles for the main content */
+main {
+    clear: left;
+}
+
+section {
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+/*this is for the home page grid items*/
+
+.home-firstgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.home-secondgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(auto, auto);
+}
+
+.home-firstgrid img,
+.home-secondgrid img {
+    max-width: 100px;
+}
+
+.home-firstgrid article,
+.home-secondgrid article {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+}
+
+.home-firstgrid .one {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.home-firstgrid .two {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.home-firstgrid .three {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.home-firstgrid .four {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.home-firstgrid .five {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.home-firstgrid .six {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.zero {
+    grid-column: 1 / 3;
+    grid-row: 1;
+
+}
+
+.home-secondgrid .one {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.home-secondgrid .two {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.home-secondgrid .three {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.home-secondgrid .four {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+/*this is for the home page main picture of happy people*/
+main .home-whatislbhr {
+    float: left;
+    max-width: 200px;
+}
+
+main #aboutvicki {
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+main #aboutvicki img {
+    max-width: 200px;
+    display: block;
+    margin-right: 30px;
+    float: left;
+}
+
+main #aboutvicki ul li {
+    list-style-position: inside;
+}
+
+main #handshake img {
+    max-width: 250px;
+    display: block;
+    margin-left: 30px;
+    float: right;
+}
+
+main #everyone img {
+    max-width: 250px;
+    display: block;
+    margin-right: 30px;
+    float: left;
+}
+
+
+main #magnifyingglass img {
+    max-width: 100px;
+    display: block;
+    margin-right: 30px;
+    float: left;
+}
+
+main #contactus img {
+    max-width: 250px;
+    display: block;
+    margin: auto;
+}
+
+main #contactus {
+    text-align: center;
+}
+
+main h1 {
+    font-size: 200%;
+    color: black;
+    margin: 5px auto 5px auto;
+}
+
+main h3 {
+    font-size: 150%;
+    color: rgb(99, 113, 108);
+    margin: 5px auto 5px auto;
+}
+
+main ul {
+    list-style-type: circle;
+}
+
+
+
+/* the styles for the footer */
+footer p {
+    font-size: 75%;
+    text-align: right;
+    padding-top: 20px;
+}
