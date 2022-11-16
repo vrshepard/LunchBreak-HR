@@ -144,6 +144,12 @@ section.home-firstgrid, section.home-secondgrid {
   flex-wrap: wrap;
   align-content: center;
 }
+@media screen and (max-width: 1600px) {
+  section.home-firstgrid.home-firstgrid, section.home-secondgrid.home-firstgrid {
+    max-width: 798px;
+    margin: auto;
+  }
+}
 section.home-firstgrid article, section.home-secondgrid article {
   display: flex;
   flex: 0 0 200px;

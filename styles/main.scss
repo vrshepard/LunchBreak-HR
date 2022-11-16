@@ -171,7 +171,14 @@ section {
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        align-content: center;        
+        align-content: center;       
+        
+        @media screen and (max-width: 1600px) {
+                &.home-firstgrid {
+                    max-width: 798px;
+                    margin: auto;
+                }
+            }
 
         article {
             display: flex;
