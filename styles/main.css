@@ -58,6 +58,14 @@ header #nav_menu ul li a :hover {
   border-bottom: 2px solid #10FFCD;
   padding: 0.5em 0;
 }
+@media only screen and (max-device-width: 796px), screen and (max-width: 796px) {
+  header #nav_menu {
+    display: none;
+  }
+  header #mobile_menu {
+    display: block;
+  }
+}
 
 /* the styles for the main content */
 main {
@@ -158,13 +166,4 @@ footer p {
   font-size: 75%;
   text-align: right;
   padding-top: 20px;
-}
-
-@media only screen and (max-device-width: 796px), screen and (max-width: 796px) {
-  #nav_menu {
-    display: none;
-  }
-  #mobile_menu {
-    display: block;
-  }
 }/*# sourceMappingURL=main.css.map */

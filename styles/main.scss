@@ -66,6 +66,16 @@ header {
             }
         }
     }
+
+    @media only screen and (max-device-width: 796px), screen and (max-width: 796px) {
+        #nav_menu {
+            display: none;
+        }
+
+        #mobile_menu {
+            display: block;
+        }
+    }
 }
 
 
@@ -189,15 +199,4 @@ footer p {
     font-size: 75%;
     text-align: right;
     padding-top: 20px;
-}
-
-@media only screen and (max-device-width: 796px),
-screen and (max-width:796px) {
-    #nav_menu {
-        display: none;
-    }
-
-    #mobile_menu {
-        display: block;
-    }
 }
