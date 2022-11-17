@@ -3,7 +3,7 @@
 /* the styles for the elements */
 body {
     font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 80%;
+    font-size: 100%;
     padding: 20px;
     background-color: white;
 }
@@ -74,6 +74,16 @@ main .home-whatislbhr {
   float: left;
   max-width: 200px;
 }
+
+main .blogpics {
+  max-width: 500px;
+}
+
+main .centered {
+  margin: auto;
+display: block;
+}
+
 main #aboutvicki {
   padding: 20px;
   border-radius: 5px;
@@ -140,6 +150,16 @@ section.home-firstgrid, section.home-secondgrid {
   flex-wrap: wrap;
   align-content: center;
 }
+section.allpost-grid {
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
 @media screen and (max-width: 1600px) {
   section.home-firstgrid.home-firstgrid, section.home-secondgrid.home-firstgrid {
     max-width: 798px;
@@ -157,14 +177,20 @@ section.home-firstgrid, section.home-secondgrid {
     justify-content: center;
   }
 }
-section.home-firstgrid article, section.home-secondgrid article {
+section.home-firstgrid article, section.home-secondgrid article, section.allpost-grid article {
   display: flex;
   flex: 0 0 200px;
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
 }
-section.home-firstgrid article img, section.home-secondgrid article img {
+
+section.allpost-grid article {
+  margin-left: 50px;
+}
+
+
+section.home-firstgrid article img, section.home-secondgrid article img, section.allpost-grid article img {
   max-width: 100%;
   display: block;
   margin: auto;
