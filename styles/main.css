@@ -150,6 +150,17 @@ section.home-firstgrid, section.home-secondgrid {
     margin: auto;
   }
 }
+@media screen and (max-width: 1100px) {
+  section.home-firstgrid.home-secondgrid, section.home-secondgrid.home-secondgrid {
+    max-width: 598px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 530px) {
+  section.home-firstgrid.home-firstgrid, section.home-firstgrid.home-secondgrid, section.home-secondgrid.home-firstgrid, section.home-secondgrid.home-secondgrid {
+    justify-content: center;
+  }
+}
 section.home-firstgrid article, section.home-secondgrid article {
   display: flex;
   flex: 0 0 200px;
