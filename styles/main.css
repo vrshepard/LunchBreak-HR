@@ -2,10 +2,10 @@
 
 /* the styles for the elements */
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 80%;
-  padding: 20px;
-  background-color: #fff;
+    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 80%;
+    padding: 20px;
+    background-color: white;
 }
 
 /* the styles for the slicknav menu crap*/
