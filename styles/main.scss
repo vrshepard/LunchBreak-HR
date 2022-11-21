@@ -6,7 +6,7 @@ $color-white: #fff;
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 80%;
+    font-size: 100%;
     padding: 20px;
     background-color: $color-white;
 }
@@ -52,12 +52,12 @@ header {
                     color: black;
                     font-weight: bold;
 
-                    .current {
+                    &.current {
                         color: #10FFCD;
                         border-bottom: 2px solid #10FFCD;
                     }
 
-                    :hover {
+                    &:hover {
                         border-bottom: 2px solid #10FFCD;
                         padding: .5em 0;
                     }
@@ -91,6 +91,15 @@ main {
     .home-whatislbhr {
         float: left;
         max-width: 200px;
+    }
+
+    .blogpics {
+        max-width: 500px;
+    }
+
+    .centered {
+        margin: auto;
+        display: block;
     }
 
     #aboutvicki {
@@ -208,6 +217,31 @@ section {
             p {
                 margin: auto;
                 text-align: center;
+            }
+        }
+    }
+
+    &.allpost-grid {
+        display: flex;
+        padding: 10px;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        align-content: center;
+
+        article {
+            display: flex;
+            flex: 0 0 200px;
+            align-items: center;
+            align-content: center;
+            flex-wrap: wrap;
+            margin-right: 50px;
+    
+            img {
+                max-width: 100%;
+                display: block;
+                margin: auto;
             }
         }
     }
