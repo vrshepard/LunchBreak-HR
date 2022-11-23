@@ -9,15 +9,25 @@ body {
 
 /* the styles for the slicknav menu crap*/
 /* the styles for the header */
-header img {
+header {
+  margin-bottom: 20px;
+  display: flex;
+  border-top: 2px solid #10FFCD;
+  border-bottom: 2px solid #10FFCD;
+}
+header a {
+  flex: 1;
+  margin-left: 20px;
+}
+header a img {
   max-width: 250px;
   display: block;
-  margin: auto;
 }
 header #mobile_menu {
   display: none;
 }
 header #nav_menu {
+  flex: 0, 0, 700px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,8 +36,6 @@ header #nav_menu ul {
   list-style-type: none;
   padding: 0em 0;
   text-align: center;
-  border-top: 2px solid #10FFCD;
-  border-bottom: 2px solid #10FFCD;
 }
 header #nav_menu ul li {
   float: left;
@@ -53,12 +61,16 @@ header #nav_menu ul li a:hover {
   border-bottom: 2px solid #10FFCD;
   padding: 0.5em 0;
 }
-@media only screen and (max-device-width: 796px), screen and (max-width: 796px) {
+@media only screen and (max-device-width: 1100px), screen and (max-width: 1100px) {
   header #nav_menu {
     display: none;
   }
   header #mobile_menu {
     display: block;
+    margin: auto;
+  }
+  header a img {
+    max-width: 180px;
   }
 }
 
