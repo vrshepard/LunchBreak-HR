@@ -3,34 +3,35 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 100%;
-  padding: 20px;
   background-color: #fff;
 }
 
 /* the styles for the slicknav menu crap*/
 /* the styles for the header */
-header {
-  margin-bottom: 20px;
-  display: flex;
-  border-top: 2px solid #10FFCD;
+a.logo {
+  display: block;
+  margin: auto;
+  background-color: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
   border-bottom: 2px solid #10FFCD;
 }
-header a {
-  flex: 1;
-  margin-left: 20px;
-}
-header a img {
+a.logo img {
   max-width: 250px;
   display: block;
+  margin: auto;
 }
+
 header #mobile_menu {
   display: none;
 }
 header #nav_menu {
-  flex: 0, 0, 700px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 2px solid #10FFCD;
+  margin-bottom: 20px;
 }
 header #nav_menu ul {
   list-style-type: none;
@@ -61,7 +62,7 @@ header #nav_menu ul li a:hover {
   border-bottom: 2px solid #10FFCD;
   padding: 0.5em 0;
 }
-@media only screen and (max-device-width: 1100px), screen and (max-width: 1100px) {
+@media only screen and (max-device-width: 796px), screen and (max-width: 796px) {
   header #nav_menu {
     display: none;
   }

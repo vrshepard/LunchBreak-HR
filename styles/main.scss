@@ -7,37 +7,39 @@ $color-white: #fff;
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 100%;
-    padding: 20px;
     background-color: $color-white;
 }
 
 /* the styles for the slicknav menu crap*/
 /* the styles for the header */
-header {
-    margin-bottom: 20px;
-    display: flex;
-    border-top: 2px solid #10FFCD;
+
+a.logo {
+    display: block;
+    margin: auto;
+    background-color: $color-white;
+    position: sticky;
+    top: 0px;    
     border-bottom: 2px solid #10FFCD;
 
-    a {
-        flex: 1;
-        margin-left: 20px;
+    img {
+        max-width: 250px;
+        display: block;
+        margin: auto;
+    }
+}
 
-        img {
-            max-width: 250px;
-            display: block;
-        }
-    }    
+header {
 
     #mobile_menu {
         display: none;
     }
 
     #nav_menu {
-        flex: 0, 0, 700px;
         display: flex;
         justify-content: center;
         align-items: center;
+        border-bottom: 2px solid #10FFCD;
+        margin-bottom: 20px;
 
         ul {
             list-style-type: none;
@@ -74,7 +76,7 @@ header {
         }
     }
 
-    @media only screen and (max-device-width: 1100px), screen and (max-width: 1100px) {
+    @media only screen and (max-device-width: 796px), screen and (max-width: 796px) {
         #nav_menu {
             display: none;
         }
