@@ -69,6 +69,12 @@ header #nav_menu ul li a:hover {
   header #mobile_menu {
     display: block;
     margin: auto;
+    position: fixed;
+    top: 45px;
+    right: 20px;
+  }
+  header #mobile_menu ul {
+    background-color: #fff;
   }
   header a img {
     max-width: 180px;
