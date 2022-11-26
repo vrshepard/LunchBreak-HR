@@ -70,10 +70,11 @@ a.logo img {
   }
   #mobile_menu {
     display: block;
-    margin: auto;
     position: -webkit-sticky;
     position: sticky;
-    top: 25px;
+    margin-top: -90px;
+    margin-bottom: 70px;
+    top: 0px;
     right: 20px;
   }
   #mobile_menu ul {
