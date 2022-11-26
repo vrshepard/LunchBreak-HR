@@ -13,12 +13,13 @@ body {
 /* the styles for the slicknav menu crap*/
 /* the styles for the header */
 
+
 a.logo {
     display: block;
     margin: auto;
     background-color: $color-white;
     position: sticky;
-    top: 0px;    
+    top: -20px;    
     border-bottom: 2px solid #10FFCD;
 
     img {
@@ -28,77 +29,76 @@ a.logo {
     }
 }
 
-header {
+#mobile_menu {
+    display: none;
+}
 
-    #mobile_menu {
-        display: none;
-    }
+#nav_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #10FFCD;
+    margin-bottom: 20px;
 
-    #nav_menu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-bottom: 2px solid #10FFCD;
-        margin-bottom: 20px;
+    ul {
+        list-style-type: none;
+        padding: 0em 0;
+        text-align: center;
 
-        ul {
-            list-style-type: none;
-            padding: 0em 0;
-            text-align: center;
+        li {
+            float: left;
+            display: inline;
+            padding: 0 1.5em;
 
-            li {
-                float: left;
-                display: inline;
-                padding: 0 1.5em;
+            a {
+                font-family: 'Roboto';
+                font-size: medium;
+                text-align: center;
+                display: block;
+                max-width: 150px;
+                padding: 0.5em 0;
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
 
-                a {
-                    font-family: 'Roboto';
-                    font-size: medium;
-                    text-align: center;
-                    display: block;
-                    max-width: 150px;
-                    padding: 0.5em 0;
-                    text-decoration: none;
-                    color: black;
-                    font-weight: bold;
+                &.current {
+                    color: #10FFCD;
+                    border-bottom: 2px solid #10FFCD;
+                }
 
-                    &.current {
-                        color: #10FFCD;
-                        border-bottom: 2px solid #10FFCD;
-                    }
-
-                    &:hover {
-                        border-bottom: 2px solid #10FFCD;
-                        padding: .5em 0;
-                    }
+                &:hover {
+                    border-bottom: 2px solid #10FFCD;
+                    padding: .5em 0;
                 }
             }
         }
     }
+}
 
-    @media only screen and (max-device-width: 796px), screen and (max-width: 796px) {
-        #nav_menu {
-            display: none;
-        }
-
-        #mobile_menu {
-            display: block;
-            margin: auto;
-            position: fixed;
-            top: 45px; 
-            right: 20px;
-
-            ul {
-                background-color: $color-white;
-            }
-        }
-
-        a {
-            img {
-                max-width: 180px;
-            }
-        }        
+@media only screen and (max-device-width: 796px), screen and (max-width: 796px) {
+    #nav_menu {
+        display: none;
     }
+
+    #mobile_menu {
+        display: block;
+        margin: auto;
+        position: sticky;
+        top: 25px; 
+        right: 20px;
+
+        ul {
+            background-color: $color-white;
+        }
+    }
+
+    a.logo {            
+
+        img {
+            max-width: 180px;
+            margin-left: 20px;
+        }
+    }        
 }
 
 

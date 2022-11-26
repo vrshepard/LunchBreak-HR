@@ -14,7 +14,7 @@ a.logo {
   background-color: #fff;
   position: -webkit-sticky;
   position: sticky;
-  top: 0px;
+  top: -20px;
   border-bottom: 2px solid #10FFCD;
 }
 a.logo img {
@@ -23,27 +23,28 @@ a.logo img {
   margin: auto;
 }
 
-header #mobile_menu {
+#mobile_menu {
   display: none;
 }
-header #nav_menu {
+
+#nav_menu {
   display: flex;
   justify-content: center;
   align-items: center;
   border-bottom: 2px solid #10FFCD;
   margin-bottom: 20px;
 }
-header #nav_menu ul {
+#nav_menu ul {
   list-style-type: none;
   padding: 0em 0;
   text-align: center;
 }
-header #nav_menu ul li {
+#nav_menu ul li {
   float: left;
   display: inline;
   padding: 0 1.5em;
 }
-header #nav_menu ul li a {
+#nav_menu ul li a {
   font-family: "Roboto";
   font-size: medium;
   text-align: center;
@@ -54,33 +55,35 @@ header #nav_menu ul li a {
   color: black;
   font-weight: bold;
 }
-header #nav_menu ul li a.current {
+#nav_menu ul li a.current {
   color: #10FFCD;
   border-bottom: 2px solid #10FFCD;
 }
-header #nav_menu ul li a:hover {
+#nav_menu ul li a:hover {
   border-bottom: 2px solid #10FFCD;
   padding: 0.5em 0;
 }
+
 @media only screen and (max-device-width: 796px), screen and (max-width: 796px) {
-  header #nav_menu {
+  #nav_menu {
     display: none;
   }
-  header #mobile_menu {
+  #mobile_menu {
     display: block;
     margin: auto;
-    position: fixed;
-    top: 45px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 25px;
     right: 20px;
   }
-  header #mobile_menu ul {
+  #mobile_menu ul {
     background-color: #fff;
   }
-  header a img {
+  a.logo img {
     max-width: 180px;
+    margin-left: 20px;
   }
 }
-
 /* the styles for the main content */
 main {
   clear: left;
