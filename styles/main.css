@@ -237,8 +237,24 @@ section.allpost-grid article img {
 }
 
 /* the styles for the footer */
+footer {
+  margin: 0;
+  padding: 10px;
+  background-color: #d1d1d1;
+}
+footer nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+footer nav a {
+  margin-right: 20px;
+  color: rgb(107, 107, 107);
+}
 footer p {
   font-size: 75%;
-  text-align: right;
-  padding-top: 20px;
+  text-align: center;
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */

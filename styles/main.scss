@@ -283,8 +283,28 @@ section {
 } 
 
 /* the styles for the footer */
-footer p {
+footer {
+    margin: 0;
+    padding: 10px;
+    background-color: #d1d1d1;
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+
+        a {
+            margin-right: 20px;
+            color: rgb(107, 107, 107);
+        }
+        
+    }
+
+    p {
     font-size: 75%;
-    text-align: right;
-    padding-top: 20px;
+    text-align: center;
+    color: $color-white;
+    }
 }
