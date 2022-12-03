@@ -1,41 +1,50 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,500&family=Roboto&display=swap");
-
 /* the styles for the elements */
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,500&family=Roboto&display=swap");
 body {
     font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 100%;
-    padding: 20px;
     background-color: white;
 }
 
 /* the styles for the slicknav menu crap*/
 /* the styles for the header */
-header img {
+a.logo {
+  display: block;
+  margin: auto;
+  background-color: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -20px;
+  border-bottom: 2px solid #10FFCD;
+}
+a.logo img {
   max-width: 250px;
   display: block;
   margin: auto;
 }
-header #mobile_menu {
+
+#mobile_menu {
   display: none;
 }
-header #nav_menu {
+
+#nav_menu {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 2px solid #10FFCD;
+  margin-bottom: 20px;
 }
-header #nav_menu ul {
+#nav_menu ul {
   list-style-type: none;
   padding: 0em 0;
   text-align: center;
-  border-top: 2px solid #10FFCD;
-  border-bottom: 2px solid #10FFCD;
 }
-header #nav_menu ul li {
+#nav_menu ul li {
   float: left;
   display: inline;
   padding: 0 1.5em;
 }
-header #nav_menu ul li a {
+#nav_menu ul li a {
   font-family: "Roboto";
   font-size: medium;
   text-align: center;
@@ -46,23 +55,37 @@ header #nav_menu ul li a {
   color: black;
   font-weight: bold;
 }
-header #nav_menu ul li a .current {
+#nav_menu ul li a.current {
   color: #10FFCD;
   border-bottom: 2px solid #10FFCD;
 }
-header #nav_menu ul li a :hover {
+#nav_menu ul li a:hover {
   border-bottom: 2px solid #10FFCD;
   padding: 0.5em 0;
 }
+
 @media only screen and (max-device-width: 796px), screen and (max-width: 796px) {
-  header #nav_menu {
+  #nav_menu {
     display: none;
   }
-  header #mobile_menu {
+  #mobile_menu {
     display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    margin-top: -90px;
+    margin-bottom: 70px;
+    top: 0px;
+    right: 20px;
+  }
+  #mobile_menu ul {
+    background-color: #fff;
+    margin-left: 200px;
+  }
+  a.logo img {
+    max-width: 180px;
+    margin-left: 20px;
   }
 }
-
 /* the styles for the main content */
 main {
   clear: left;
@@ -74,16 +97,13 @@ main .home-whatislbhr {
   float: left;
   max-width: 200px;
 }
-
 main .blogpics {
   max-width: 500px;
 }
-
 main .centered {
   margin: auto;
-display: block;
+  display: block;
 }
-
 main #aboutvicki {
   padding: 20px;
   border-radius: 5px;
@@ -198,6 +218,28 @@ section.home-firstgrid article img, section.home-secondgrid article img, section
 section.home-firstgrid article p, section.home-secondgrid article p {
   margin: auto;
   text-align: center;
+}
+section.allpost-grid {
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: center;
+}
+section.allpost-grid article {
+  display: flex;
+  flex: 0 0 200px;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-right: 50px;
+}
+section.allpost-grid article img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
 }
 
 /* the styles for the footer */
