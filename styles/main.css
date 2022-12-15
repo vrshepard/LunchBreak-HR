@@ -103,6 +103,7 @@ main .home-whatislbhr {
 }
 main .blogpics {
   max-width: 500px;
+  width: 100%;
 }
 main .centered {
   margin: auto;
