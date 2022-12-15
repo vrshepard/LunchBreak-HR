@@ -75,12 +75,15 @@ a.logo img {
   }
   #mobile_menu {
     display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     position: -webkit-sticky;
     position: sticky;
     margin-top: -9rem;
     margin-bottom: 7rem;
     top: 0px;
-    right: 2rem;
+    left: 80rem;
     font-size: 1.2rem;
   }
   #mobile_menu ul {

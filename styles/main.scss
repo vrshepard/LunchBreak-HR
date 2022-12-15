@@ -88,11 +88,12 @@ a.logo {
 
     #mobile_menu {
         display: block;
+        width: fit-content;
         position: sticky;
         margin-top: -9rem;
         margin-bottom: 7rem;
         top: 0px; 
-        right: 2rem;
+        left: 80rem;
         font-size: 1.2rem;
 
         ul {
