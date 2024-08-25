@@ -101,7 +101,7 @@
 
 .slicknav_nav a {
     display: block;
-    float: right;
+    text-align: end;
     clear: both;
 }
 
