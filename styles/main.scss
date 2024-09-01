@@ -214,12 +214,11 @@ main {
 .firstgrid-container {
     background-color: colors.$beige;
     max-width: 1150px;
-    border-radius: 3rem;
     box-shadow: 10px 10px 5px colors.$darkgray;
     margin: auto;
 
     @media screen and (max-width: 1150px) {
-            border-radius: 0;
+            box-shadow: none;
         }
 }
 
@@ -255,9 +254,12 @@ section {
     }
     &.home-firstgrid {
         background-color: colors.$color-white;
-        border-radius: 2rem;
         box-shadow: inset 10px 5px 5px colors.$darkgray;
         margin-top: 0.5rem;
+    }
+
+    &.firstgrid-header, &.home-firstgrid {
+        width: min(80%, 500px);
     }
 
     &.home-firstgrid, &.home-secondgrid {

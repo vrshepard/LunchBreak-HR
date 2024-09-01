@@ -178,13 +178,12 @@ main p {
 .firstgrid-container {
   background-color: #faf8f6;
   max-width: 1150px;
-  border-radius: 3rem;
   box-shadow: 10px 10px 5px rgba(92, 92, 92, 0.3215686275);
   margin: auto;
 }
 @media screen and (max-width: 1150px) {
   .firstgrid-container {
-    border-radius: 0;
+    box-shadow: none;
   }
 }
 
@@ -216,9 +215,11 @@ section.firstgrid-header h1 {
 }
 section.home-firstgrid {
   background-color: #fff;
-  border-radius: 2rem;
   box-shadow: inset 10px 5px 5px rgba(92, 92, 92, 0.3215686275);
   margin-top: 0.5rem;
+}
+section.firstgrid-header, section.home-firstgrid {
+  width: min(80%, 500px);
 }
 section.home-firstgrid, section.home-secondgrid {
   display: grid;
