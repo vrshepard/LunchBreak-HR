@@ -9,69 +9,40 @@
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
-	<link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="styles/slicknav.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.slicknav.min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function(){
-            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        $(document).ready(function () {
+            $('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
         });
     </script>
 </head>
 
 <body>
-    <a class="logo" href="index.html"><img src="images/LunchbreakHRBlog.jpg" alt="LunchbreakHR Blog Logo"></a>
-    <nav id="mobile_menu"></nav>
-    <nav id="nav_menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutLBHR.html">About</a></li>
-            <li><a href="trendingtopics.html">Trending Topics</a></li>
-            <li><a href="allblogposts.html">All Blog Posts</a></li>
-            <li><a href="contactus.html" class="lastitem current">Contact Us</a></li>
-        </ul>
-    </nav>
+    <div class="menu-container">
+        <a class="logo" href="index.html"><img src="images/LunchbreakHRBlog.jpg" alt="LunchbreakHR Blog Logo"></a>
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutLBHR.html">About</a></li>
+                <li><a href="trendingtopics.html">Trending Topics</a></li>
+                <li><a href="allblogposts.html">All Blog Posts</a></li>
+                <li><a href="contactus.html" class="lastitem current">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
 
-	<main>
-        <h1>Send Us A Message!</h1>
-        <form action="sendmail.php" method="post" name="contact_form" id="contact_form">
-            <fieldset>
-                    <legend>Contact Information</legend>
-                    <label for="first_name">First Name:</label>
-                <input type="text" name="first_name" id="first_name" required><br>
-                <label for="last_name">Last Name:</label>
-                <input type="text" name="last_name" id="last_name" required><br>
-                    <label for="email">Email Address:</label>
-                    <input type="email" name="email" id="email" required><br>
-                    <label for="verify">Verify Email:</label>
-                    <input type="email" name="verify" id="verify" required autocomplete="off"><br>
-                <label for="phone">Phone Number:</label>
-                <input type="tel" name="phone" id="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="555-555-5555" required><br>
-            </fieldset>
-            <fieldset>
-                    <legend>Message Information</legend>
-                <label for="reservation_date">Today's Date:</label>
-                <input type="date" name="reservation_date" id="reservation_date" required><br>
-                <label for="type_of_inquiry">Type of Inquiry:</label>         
-                    <select name="type_of_inquiry" id="type_of_inquiry">
-                        <option value="Question">Question</option>
-                        <option value="Article Suggestion">Article Suggestion</option>
-                        <option value="Consulting">Consulting</option>
-                        <option value="General Message">General Message</option>
-                    </select><br>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-            </fieldset>
-            <fieldset id="buttons">
-                <legend>Submit Your Email Message</legend>
-                <label>&nbsp;</label>
-                <input type="submit" id="submit" value="Send Email">
-                <input type="reset" id="reset" value="Clear"><br>
-            </fieldset>
-        </form>
+    <main>
+        <section>
+            <h1>Send Us A Message!</h1>
+            <p>lunchbreak-hr at gmail dot com</p>
+        </section>
     </main>
-    <footer>        
+    
+    <footer>
         <nav>
             <a href="privacypolicy.html">Privacy Policy</a>
             <a href="termsandconditions.html">Terms & Conditions</a>
@@ -81,4 +52,5 @@
     </footer>
 
 </body>
+
 </html>
