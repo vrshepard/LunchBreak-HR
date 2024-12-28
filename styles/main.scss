@@ -1,8 +1,6 @@
 /* the styles for the elements */
-
+@use 'colors';
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,500&family=Roboto&display=swap');
-
-$color-white: #fff;
 
 html {
     box-sizing: border-box;
@@ -13,20 +11,23 @@ html {
 body {
     font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.6rem;
-    background-color: $color-white;
+    background-color: colors.$color-white;
+    margin: 0;
 }
 
 /* the styles for the slicknav menu crap*/
 /* the styles for the header */
 
+.menu-container {
+    display: grid;
+    border-bottom: 0.2rem solid colors.$aquagreen;  
+}
 
 a.logo {
     display: block;
-    margin: auto;
-    background-color: $color-white;
+    background-color: colors.$color-white;
     position: sticky;
     top: -2rem;    
-    border-bottom: 0.2rem solid #10FFCD;
 
     img {
         max-width: 25rem;
@@ -43,8 +44,7 @@ a.logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 0.2rem solid #10FFCD;
-    margin-bottom: 2rem;
+    border-bottom: 0.2rem solid colors.$aquagreen;
 
     ul {
         list-style-type: none;
@@ -68,12 +68,12 @@ a.logo {
                 font-weight: bold;
 
                 &.current {
-                    color: #10FFCD;
-                    border-bottom: 0.2rem solid #10FFCD;
+                    color: colors.$aquagreen;
+                    border-bottom: 0.2rem solid colors.$aquagreen;
                 }
 
                 &:hover {
-                    border-bottom: 0.2rem solid #10FFCD;
+                    border-bottom: 0.2rem solid colors.$aquagreen;
                     padding: .5em 0;
                 }
             }
@@ -91,13 +91,12 @@ a.logo {
         width: fit-content;
         position: sticky;
         margin-top: -9rem;
-        margin-bottom: 7rem;
         top: 0px; 
         left: 80rem;
         font-size: 1.2rem;
 
         ul {
-            background-color: $color-white;
+            background-color: colors.$color-white;
             margin-left: 20rem;
         }
     }
@@ -120,9 +119,6 @@ a.logo {
 
 /* the styles for the main content */
 main {
-    clear: left;
-    width: 80vw;    
-    margin: auto;
 
     /*this is for the home page grid items*/
     .home-whatislbhr {
@@ -197,7 +193,7 @@ main {
     h1 {
         font-size: 200%;
         color: black;
-        margin: 0.5rem auto 0.5rem auto;
+        margin: 2rem auto;
     }
 
     h3 {
@@ -209,25 +205,75 @@ main {
     ul {
         list-style-type: circle;
     }
+
+    p {
+        line-height: 3rem;
+    }
+}
+
+.firstgrid-container {
+    background-color: colors.$beige;
+    max-width: 1150px;
+    box-shadow: 10px 10px 5px colors.$darkgray;
+    margin: auto;
+
+    @media screen and (max-width: 1150px) {
+            box-shadow: none;
+        }
 }
 
 section {
     overflow: auto;
-    margin-bottom: 2rem;
+    margin: 5rem auto;
+    width: min(90%, 600px);
+
+    /*First welcome card*/
+    &.welcome-card {
+        background-color: colors.$lightgray-aquagreen;
+        box-shadow: 10px 5px 5px colors.$darkgray;
+
+        h1, p {
+            margin: 2rem;
+        }
+
+        .card-hr {
+            width: 100px;
+            border: none;
+            margin: 3rem;
+            height: 5px;
+            background-color: colors.$aquagreen;
+        }
+    }
+
+    &.firstgrid-header {
+        margin-bottom: 0.5rem;
+
+        h1 {
+            margin-top: 5rem;
+        }
+    }
+    &.home-firstgrid {
+        background-color: colors.$color-white;
+        box-shadow: inset 10px 5px 5px colors.$darkgray;
+        margin-top: 0.5rem;
+    }
+
+    &.firstgrid-header, &.home-firstgrid {
+        width: min(80%, 500px);
+    }
 
     &.home-firstgrid, &.home-secondgrid {
-        display: flex;
+        display: grid;
         padding: 1rem;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         align-content: center;       
         
         @media screen and (max-width: 1600px) {
                 &.home-firstgrid {
                     max-width: 798px;
-                    margin: auto;
                 }
             }
         
@@ -249,17 +295,15 @@ section {
             flex: 0 0 20rem;
             align-items: center;
             align-content: center;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
 
             img {
-                max-width: 100%;
-                display: block;
-                margin: auto;
+                max-width: 100px;
+                margin-left: 3rem;
             }
 
             p {
-                margin: auto;
-                text-align: center;
+                font-style: italic;
             }
         }
     }
@@ -313,6 +357,6 @@ footer {
     p {
     font-size: 75%;
     text-align: center;
-    color: $color-white;
+    color: colors.$color-white;
     }
 }

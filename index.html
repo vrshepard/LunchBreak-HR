@@ -18,79 +18,84 @@
     </script>
 </head>
 
-<body>       
-    <a class="logo" href="index.html"><img src="images/LunchbreakHRBlog.jpg" alt="LunchbreakHR Blog Logo"></a>
-    <nav id="mobile_menu"></nav>
-    <nav id="nav_menu">
-        <ul>
-            <li><a href="index.html" class="current">Home</a></li>
-            <li><a href="aboutLBHR.html">About</a></li>
-            <li><a href="trendingtopics.html">Trending Topics</a></li>
-            <li><a href="allblogposts.html">All Blog Posts</a></li>
-            <li><a href="contactus.html" class="lastitem">Contact Us</a></li>
-        </ul>
-    </nav>
-
+<body>
+    <div class="menu-container">
+        <a class="logo" href="index.html"><img src="images/LunchbreakHRBlog.jpg" alt="LunchbreakHR Blog Logo"></a>
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.html" class="current">Home</a></li>
+                <li><a href="aboutLBHR.html">About</a></li>
+                <li><a href="trendingtopics.html">Trending Topics</a></li>
+                <li><a href="allblogposts.html">All Blog Posts</a></li>
+                <li><a href="contactus.html" class="lastitem">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <main>
-        <section>
-
+        <section class="welcome-card">
             <h1>Welcome to the LunchbreakHR Blog</h1>
-            <p>LunchbreakHR is an online blog designed to provide a refreshing and entertaining prospective on common
-                workplace topics from the brain of an HR guru. With over 10 years of professional and leadership
+            <hr class="card-hr" />
+            <p>LunchbreakHR is an online blog designed to provide a refreshing and entertaining prospective on
+                common
+                workplace topics from the brain of an HR guru. </p>
+            <!-- With over 10 years of professional and leadership
                 experience, we bring interesting and thought-provoking takes on hot topics. Whether you are just
                 starting on your career or starting to cross the finish line to retirement,
                 LunchbreakHR blog provides weekly posts with witty banter. I recommend grabbing a snack, taking a break,
-                and reading a topic to help inspire your workday to be a little bit brighter.</p>
+                and reading a topic to help inspire your workday to be a little bit brighter.</p> -->
         </section>
+        <div class="firstgrid-container">
+            <section class="firstgrid-header">
+                <h1>
+                    We have a wide range of topics:
+                </h1>
+            </section>
+
+            <section class="home-firstgrid">
+                <article>
+                    <img src="images/picture1.png" alt="picture of punching fist with hammer">
+                    <p>Unions</p>
+                </article>
+                <article>
+                    <img src="images/picture2.png" alt="picture of gender symbols for women and men">
+                    <p>Pay equity</p>
+                </article>
+                <article>
+                    <img src="images/picture3.png" alt="picture of justice scale">
+                    <p>Employee discrimination</p>
+                </article>
+                <article>
+                    <img src="images/picture4.png" alt="picture of hand with money">
+                    <p>The wage-gap</p>
+                </article>
+                <article>
+                    <img src="images/picture5.png" alt="picture of economics chart with arrow going up">
+                    <p>Inflation</p>
+                </article>
+                <article>
+                    <img src="images/picture6.png" alt="picture of binoculars with money symbols">
+                    <p>Pay transparency</p>
+                </article>
+            </section>
+            <br />
+        </div>
+
         <section>
-            <h1>
-                We have a wide range of topics:
-            </h1>
+            <h1>Check out our most recent blog post:</h1>
+
+            <article>
+                <img class="blogpics" src="images/inflationplanning.jpg"
+                    alt="copyright free picture of business planning">
+                <h3>Inflation and Merit Increases for 2023 Compensation Planning</h3>
+                <p>Inflation has risen dramatically in the past year and has been reported to be over 8.3% at the end of
+                    August 2022. Many of your employees may be asking...</p>
+                <a href="articles/inflationandmeritincreases.html">
+                    <h4>Read on</h4>
+                </a>
+            </article>
         </section>
-
-        <section class="home-firstgrid">
-
-            <article>
-                <img src="images/picture1.png" alt="picture of punching fist with hammer">
-                <p>Unionism in the US</p>
-            </article>
-            <article>
-                <img src="images/picture2.png" alt="picture of gender symbols for women and men">
-                <p>The pay equity disparity between men and women</p>
-            </article>
-            <article>
-                <img src="images/picture3.png" alt="picture of justice scale">
-                <p>Discrimination topics faced by millions of employees</p>
-            </article>
-            <article>
-                <img src="images/picture4.png" alt="picture of hand with money">
-                <p>The wage-gap</p>
-            </article>
-            <article>
-                <img src="images/picture5.png" alt="picture of economics chart with arrow going up">
-                <p>Inflation</p>
-            </article>
-            <article>
-                <img src="images/picture6.png" alt="picture of binoculars with money symbols">
-                <p>Pay transparency laws in the U.S. </p>
-            </article>
-
-        </section>
-
-<section>
-    <h1>Check out our most recent blog post:</h1>
-
-    <article>
-        <img class="blogpics" src="images/inflationplanning.jpg" alt="copyright free picture of business planning">
-        <h3>Inflation and Merit Increases for 2023 Compensation Planning</h3>
-        <p>Inflation has risen dramatically in the past year and has been reported to be over 8.3% at the end of
-            August 2022. Many of your employees may be asking...</p>
-        <a href="articles/inflationandmeritincreases.html">
-            <h4>Read on</h4>
-        </a>
-    </article>
-</section>
 
         <section>
             <h3>Other topics that we enjoy covering include tips and tricks for the HR Professional and Leadership team
@@ -135,7 +140,7 @@
 
     </main>
 
-    <footer>        
+    <footer>
         <nav>
             <a href="privacypolicy.html">Privacy Policy</a>
             <a href="termsandconditions.html">Terms & Conditions</a>
